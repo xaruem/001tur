@@ -9,33 +9,29 @@
 
   html, body {
     height:100%;
-    background:#0b1f1e; /* тёмная подложка на случай узких/широких экранов */
+    background:#ffffff;
   }
 
   .page {
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:center; /* центрирует кадр — свободное место делится поровну сверху и снизу */
     min-height:100dvh;
-    background:#0b1f1e;
+    background:#ffffff;
   }
 
   .frame {
     position:relative;
     width:100%;
     max-width:500px;
-    height:100dvh;
-    overflow:hidden;
     background:#ffffff;
   }
 
-  /* фото растягивается и красиво заполняет весь экран без белых полос */
+  /* фото в своих родных пропорциях, без обрезки и искажений */
   .frame img {
     display:block;
     width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center top;
+    height:auto;
   }
 
   /* ===== Кнопка "Hozir buyurtma qiling" ===== */
@@ -139,12 +135,12 @@
       <img src="hero.png" alt="RITS TOUR - Sayohat vaqti keldi">
 
       <div class="cta-wrap">
-        <a class="cta" href="https://t.me/your_channel_here" target="_blank" rel="noopener" aria-label="Hozir buyurtma qiling">
+        <a class="cta" href="https://t.me/rits_tour" target="_blank" rel="noopener" aria-label="Hozir buyurtma qiling">
           <span class="cta-scale"></span>
         </a>
       </div>
 
-      <a class="tg-badge" href="https://t.me/your_channel_here" target="_blank" rel="noopener" aria-label="Telegram orqali yozing">
+      <a class="tg-badge" href="https://t.me/rits_tour" target="_blank" rel="noopener" aria-label="Telegram orqali yozing">
         <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
           <path d="M195.7 60.5 168 187.4c-2.1 9.4-7.6 11.7-15.4 7.3l-42.6-31.4-20.6 19.8c-2.3 2.3-4.2 4.2-8.6 4.2l3.1-43.7L163 60.2c3.7-3.3-.8-5.1-5.7-1.8L61.3 121l-42.9-13.4c-9.3-2.9-9.5-9.3 2-13.8L184 47.2c7.8-2.9 14.6 1.9 11.7 13.3z"/>
         </svg>
